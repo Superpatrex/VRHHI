@@ -3497,6 +3497,7 @@ GameObject:
   - component: {fileID: 1292727874}
   - component: {fileID: 1292727873}
   - component: {fileID: 1292727877}
+  - component: {fileID: 1292727878}
   m_Layer: 5
   m_Name: GUI
   m_TagString: Untagged
@@ -3604,7 +3605,7 @@ MonoBehaviour:
   followOnStart: 1
   offsetPosOnStart: 0
   offsetRotOnStart: 0
-  followPosition: 1
+  followPosition: 0
   followX: 1
   followY: 0
   followZ: 0
@@ -3615,6 +3616,23 @@ MonoBehaviour:
   followZrot: 1
   rotationSpeed: 5
   lookAtTarget: 1
+--- !u!114 &1292727878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292727871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad2f1754d83a88045a36660ba99e6e7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentTransform: {fileID: 1917816046}
+  ignoreRotation: 1
+  attemptChildScale: 0
+  isParented: 0
+  parentOnStart: 1
 --- !u!1 &1306734490 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3968046817508086241, guid: 82a36d298ea215f42bfc818e57b7d4b5,
@@ -5140,8 +5158,8 @@ Transform:
   m_GameObject: {fileID: 1917816045}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.132, y: 1.2770001, z: 1.801}
-  m_LocalScale: {x: 0.0551269, y: 0.0551269, z: 0.17139505}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1184692106}
@@ -5158,7 +5176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 475b1f1a61f1bb247b4ecb0036d74855, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hideMeshOnAwake: 0
+  hideMeshOnAwake: 1
   disableInBuild: 0
 --- !u!65 &1917816048
 BoxCollider:
