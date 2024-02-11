@@ -26,4 +26,8 @@ public class MAKETHISWORK : MonoBehaviour
     {
         menu.SetActive(false);
     }
+
+    // NOT TO SELF, GET AUGUST TO FIX MAYBE BUG WITH THE MENU. Basically, the menu and the controller are not the same. So it it might toggle the controller and the menu will be untoggled
+    // and the menu might be toggled and the controller might be untoggled. So, the menu and the controller are not the same. So, the menu and the controller are not the same. We need them both
+    // toggled when the gesture is performed.
 }
