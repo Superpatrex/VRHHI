@@ -21,4 +21,9 @@ public class MAKETHISWORK : MonoBehaviour
     {
         menu.SetActive(!menu.activeSelf);
     }
+
+    public void HideMenu()
+    {
+        menu.SetActive(false);
+    }
 }
