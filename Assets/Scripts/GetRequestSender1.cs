@@ -55,12 +55,12 @@ public class GetRequestSender : MonoBehaviour
 
     public void CallMuscleNeuropathyFrequencyGetRequest(float frequency)
     {
-        StartCoroutine(GetRequestSender.SendGetRequestFrequency(200f));
+        StartCoroutine(GetRequestSender.SendGetRequestFrequency(frequency));
     }
 
     public void CallMuscleNeuropathyLengthGetRequest(float frequency)
     {
-        StartCoroutine(GetRequestSender.SendGetRequestLength(.05f));
+        StartCoroutine(GetRequestSender.SendGetRequestLength(frequency));
     }
 
 
