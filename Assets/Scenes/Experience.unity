@@ -7461,7 +7461,7 @@ Transform:
   m_GameObject: {fileID: 765622589}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.301, z: 0.049}
+  m_LocalPosition: {x: 0, y: -0.261, z: 0.049}
   m_LocalScale: {x: 0.6273582, y: 0.52473605, z: 0.059320264}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8372,6 +8372,18 @@ MonoBehaviour:
       - m_Target: {fileID: 258768607}
         m_TargetAssemblyTypeName: GrandController, Assembly-CSharp
         m_MethodName: removeLastImpairment
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2142262272}
+        m_TargetAssemblyTypeName: ChangeAudio, Assembly-CSharp
+        m_MethodName: StopAudioWhenChangingMenus
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11428,7 +11440,7 @@ GameObject:
   - component: {fileID: 1292727874}
   - component: {fileID: 1292727873}
   - component: {fileID: 1292727878}
-  - component: {fileID: 1292727877}
+  - component: {fileID: 1292727879}
   m_Layer: 5
   m_Name: GUI
   m_TagString: Untagged
@@ -11519,18 +11531,6 @@ RectTransform:
   m_AnchoredPosition: {x: -0.11, y: -0.142}
   m_SizeDelta: {x: 913, y: 533}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1292727877
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1292727871}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b76c9f5bee8fe8142a9ac685cc41cd42, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1292727878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11559,6 +11559,21 @@ MonoBehaviour:
   followZrot: 1
   rotationSpeed: 5
   lookAtTarget: 0
+--- !u!114 &1292727879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292727871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11cede69aa61d114fbeb1651fb4dd9c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationTarget: {fileID: 765622589}
+  followMin: 0.6
+  stopMin: 0.05
 --- !u!1 &1306734490 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3968046817508086241, guid: 82a36d298ea215f42bfc818e57b7d4b5,
