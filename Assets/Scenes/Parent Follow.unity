@@ -123,7 +123,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &429732257
+--- !u!1 &310443674
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,43 +131,71 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 429732262}
-  - component: {fileID: 429732261}
-  - component: {fileID: 429732260}
-  - component: {fileID: 429732259}
-  - component: {fileID: 429732258}
-  - component: {fileID: 429732263}
+  - component: {fileID: 310443680}
+  - component: {fileID: 310443679}
+  - component: {fileID: 310443678}
+  - component: {fileID: 310443677}
+  - component: {fileID: 310443676}
+  - component: {fileID: 310443675}
   m_Layer: 0
-  m_Name: HasFollow
+  m_Name: Follow (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &429732258
+--- !u!114 &310443675
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 429732257}
+  m_GameObject: {fileID: 310443674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 044d14e8431615a4e887bfdeccd89683, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 681224490}
+  instantFollow: 0
+  followOnStart: 1
+  offsetPosOnStart: 0
+  offsetRotOnStart: 0
+  followPosition: 0
+  followX: 0
+  followY: 0
+  followZ: 0
+  positionTime: 0.5
+  followRotation: 1
+  followXrot: 1
+  followYrot: 1
+  followZrot: 1
+  rotationSpeed: 5
+  lookAtTarget: 1
+--- !u!114 &310443676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 310443674}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ad2f1754d83a88045a36660ba99e6e7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentTransform: {fileID: 681224490}
+  parentTransform: {fileID: 310443680}
   ignoreRotation: 1
   attemptChildScale: 0
   isParented: 0
   parentOnStart: 1
---- !u!65 &429732259
+--- !u!65 &310443677
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 429732257}
+  m_GameObject: {fileID: 310443674}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -182,13 +210,13 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &429732260
+--- !u!23 &310443678
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 429732257}
+  m_GameObject: {fileID: 310443674}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -224,57 +252,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &429732261
+--- !u!33 &310443679
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 429732257}
+  m_GameObject: {fileID: 310443674}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &429732262
+--- !u!4 &310443680
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 429732257}
+  m_GameObject: {fileID: 310443674}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.96, y: 1, z: 0.6900003}
-  m_LocalScale: {x: 0.6273581, y: 0.52473605, z: 0.059320256}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.022, y: 1.022, z: 0.586}
+  m_LocalScale: {x: 0.6273582, y: 0.52473605, z: 0.059320264}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &429732263
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 429732257}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 044d14e8431615a4e887bfdeccd89683, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 681224490}
-  instantFollow: 0
-  followOnStart: 1
-  offsetPosOnStart: 0
-  offsetRotOnStart: 0
-  followPosition: 0
-  followX: 0
-  followY: 0
-  followZ: 0
-  positionTime: 0.5
-  followRotation: 1
-  followXrot: 1
-  followYrot: 1
-  followZrot: 1
-  rotationSpeed: 5
-  lookAtTarget: 1
 --- !u!1 &681224486
 GameObject:
   m_ObjectHideFlags: 0
@@ -1376,12 +1376,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 044d14e8431615a4e887bfdeccd89683, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 429732262}
+  target: {fileID: 0}
   instantFollow: 0
   followOnStart: 1
   offsetPosOnStart: 0
   offsetRotOnStart: 0
-  followPosition: 1
+  followPosition: 0
   followX: 1
   followY: 1
   followZ: 1
@@ -1492,7 +1492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fe5044e2f266f74eacd8933e55b75cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationTarget: {fileID: 429732257}
+  rotationTarget: {fileID: 0}
   followMin: 0.5
   stopMin: 0.05
 --- !u!1660057539 &9223372036854775807
@@ -1503,5 +1503,5 @@ SceneRoots:
   - {fileID: 1365556138}
   - {fileID: 1698888190}
   - {fileID: 681224490}
-  - {fileID: 429732262}
   - {fileID: 1948102872}
+  - {fileID: 310443680}
