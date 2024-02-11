@@ -184,7 +184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad2f1754d83a88045a36660ba99e6e7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentTransform: {fileID: 310443680}
+  parentTransform: {fileID: 681224490}
   ignoreRotation: 1
   attemptChildScale: 0
   isParented: 0
@@ -269,7 +269,7 @@ Transform:
   m_GameObject: {fileID: 310443674}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.022, y: 1.022, z: 0.586}
+  m_LocalPosition: {x: 2.022, y: 1.022, z: 0.65}
   m_LocalScale: {x: 0.6273582, y: 0.52473605, z: 0.059320264}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1376,12 +1376,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 044d14e8431615a4e887bfdeccd89683, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 310443680}
   instantFollow: 0
   followOnStart: 1
   offsetPosOnStart: 0
   offsetRotOnStart: 0
-  followPosition: 0
+  followPosition: 1
   followX: 1
   followY: 1
   followZ: 1
@@ -1492,8 +1492,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fe5044e2f266f74eacd8933e55b75cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationTarget: {fileID: 0}
-  followMin: 0.5
+  rotationTarget: {fileID: 310443674}
+  followMin: 2
   stopMin: 0.05
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
