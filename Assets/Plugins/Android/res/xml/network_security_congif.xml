@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<network-security-config>
-    <domain-config cleartextTrafficPermitted="true">
-        <domain includeSubdomains="true">10.103.55.106:5000</domain> <!-- Replace with your Raspberry Pi's IP address -->
-    </domain-config>
-</network-security-config>
