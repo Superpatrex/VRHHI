@@ -38,6 +38,7 @@ public class ChangeAudio : MonoBehaviour
     void Start()
     {
         hearingImpairment = typeOfHearingImpairment.NONE;
+        //PlayAudioRecordings("MENU");
     }
 
     // Update is called once per frame
@@ -75,13 +76,6 @@ public class ChangeAudio : MonoBehaviour
 
     public void PlayAudioRecordings(string audio)
     {
-        if (audioSourceInformation.isPlaying)
-        {
-            audioSourceInformation.Stop();
-            audioSourceInformation.clip = null;
-            return;
-        }
-
         whichDamnAudio funkyAudio = (whichDamnAudio)System.Enum.Parse(typeof(whichDamnAudio), audio);
 
         switch(funkyAudio)
@@ -90,36 +84,43 @@ public class ChangeAudio : MonoBehaviour
                 audioSourceInformation.clip = menuAudio;
                 audioSourceInformation.loop = false;
                 audioSourceInformation.Play();
+                Debug.Log("Playing menu audio");
                 break;
             case whichDamnAudio.CATARACTSDESCRIPTION:
                 audioSourceInformation.clip = cataractsAudioDescription;
                 audioSourceInformation.loop = false;
                 audioSourceInformation.Play();
+                Debug.Log("Playing cataracts audio");
                 break;
             case whichDamnAudio.DIABETICRETINOPATHYDESCRIPTION:
                 audioSourceInformation.clip = diabeticRetinopathyAudioDescription;
                 audioSourceInformation.loop = false;
                 audioSourceInformation.Play();
+                Debug.Log("Playing diabetic retinopathy audio");
                 break;
             case whichDamnAudio.GLAUCOMADESCRIPTION:
                 audioSourceInformation.clip = glacomaAudioDescription;
                 audioSourceInformation.loop = false;
                 audioSourceInformation.Play();
+                Debug.Log("Playing glaucoma audio");
                 break;
             case whichDamnAudio.MACULARDEGENERATIONDESCRIPTION:
                 audioSourceInformation.clip = macularDegenerationAudioDescription;
                 audioSourceInformation.loop = false;
                 audioSourceInformation.Play();
+                Debug.Log("Playing macular degeneration audio");
                 break;
             case whichDamnAudio.PERIPHERALNEUROPATHYDESCRIPTION:
                 audioSourceInformation.clip = peripheralNeuropathyAudioDescription;
                 audioSourceInformation.loop = false;
                 audioSourceInformation.Play();
+                Debug.Log("Playing peripheral neuropathy audio");
                 break;
             case whichDamnAudio.PARKINSONSDESCRIPTION:
                 audioSourceInformation.clip = parkinsonsAudioDescription;
                 audioSourceInformation.loop = false;
                 audioSourceInformation.Play();
+                Debug.Log("Playing parkinsons audio");
                 break;  
         }
     }
