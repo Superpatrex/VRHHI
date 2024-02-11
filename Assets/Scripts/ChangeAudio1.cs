@@ -77,12 +77,12 @@ public class ChangeAudio : MonoBehaviour
     {
         if (audioSourceInformation.isPlaying)
         {
-            audioSourceInformation.clip = null;
             audioSourceInformation.Stop();
+            audioSourceInformation.clip = null;
             return;
         }
 
-        whichDamnAudio funkyAudio = (whichDamnAudio)System.Enum.Parse(typeof(Impairment), audio);
+        whichDamnAudio funkyAudio = (whichDamnAudio)System.Enum.Parse(typeof(whichDamnAudio), audio);
 
         switch(funkyAudio)
         {
@@ -128,8 +128,8 @@ public class ChangeAudio : MonoBehaviour
     {
         if (audioSourceInformation.isPlaying)
         {
-            audioSourceInformation.clip = null;
             audioSourceInformation.Stop();
+            audioSourceInformation.clip = null;
         }
     }
 }
