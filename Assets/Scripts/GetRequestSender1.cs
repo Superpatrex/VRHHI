@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEditor;
+using UnityEngine.InputSystem;
 
 public class GetRequestSender : MonoBehaviour
 {
