@@ -1,7 +1,7 @@
 using System.Collections;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEditor;
 
 public class GetRequestSender : MonoBehaviour
 {
@@ -17,7 +17,7 @@ public class GetRequestSender : MonoBehaviour
 
     void Start()
     {
-        PlayerSettings.insecureHttpOption = InsecureHttpOption.AlwaysAllowed;
+        //PlayerSettings.insecureHttpOption = InsecureHttpOption.AlwaysAllowed;
     }
 
     /// <summary>
