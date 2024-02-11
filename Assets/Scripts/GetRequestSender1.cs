@@ -158,7 +158,7 @@ public class GetRequestSender : MonoBehaviour
     {
         // Create a new request, set its method to GET
         UnityWebRequest www = UnityWebRequest.Get("http://"+GetRequestSender.onAllUrl);
-        Debug.Log("Sending http://"+offRightUrl);
+        Debug.Log("Sending http://"+onAllUrl);
 
         // Send the request and wait for a response
         yield return www.SendWebRequest();
@@ -178,7 +178,7 @@ public class GetRequestSender : MonoBehaviour
     {
        // Create a new request, set its method to GET
         UnityWebRequest www = UnityWebRequest.Get("http://"+GetRequestSender.offAllUrl);
-        Debug.Log("Sending http://"+offRightUrl);
+        Debug.Log("Sending http://"+offAllUrl);
 
         // Send the request and wait for a response
         yield return www.SendWebRequest();
