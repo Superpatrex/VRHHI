@@ -15,9 +15,9 @@ public class GetRequestSender : MonoBehaviour
     private static string frequencyUrl = "10.103.55.106:5000/frequency";
     private static string lengthUrl = "10.103.55.106:5000/length";
 
-    void Start()
+    void Awake()
     {
-        //PlayerSettings.insecureHttpOption = InsecureHttpOption.AlwaysAllowed;
+        PlayerSettings.insecureHttpOption = InsecureHttpOption.AlwaysAllowed;
     }
 
     /// <summary>
