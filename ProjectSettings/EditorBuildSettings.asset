@@ -8,9 +8,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/GroKit/GroKit Integrations/Meta/GroKit_Meta_Starter  Hand.unity
     guid: 925c55a046c11e543b95d86560bf750e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Experience.unity
     guid: 5b97bbb3ac9621f448e8bc745e958eb7
+  - enabled: 1
+    path: Assets/Scenes/Parent Follow.unity
+    guid: 0880b88774efe0d48be704aaed16265c
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 14c6ce5e0352e2a40bcd13c8e96c1adb,
       type: 2}
