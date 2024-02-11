@@ -2,7 +2,6 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEditor;
-using UnityEngine.InputSystem;
 
 public class GetRequestSender : MonoBehaviour
 {
@@ -18,7 +17,7 @@ public class GetRequestSender : MonoBehaviour
 
     void Awake()
     {
-        PlayerSettings.insecureHttpOption = InsecureHttpOption.AlwaysAllowed;
+        //PlayerSettings.insecureHttpOption = InsecureHttpOption.AlwaysAllowed;
     }
 
     /// <summary>
