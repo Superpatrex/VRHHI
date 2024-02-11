@@ -150,6 +150,8 @@ public class ChangeVision : MonoBehaviour
         {
             ChangeToNormalVision();
         }
+
+        visionImpairment = type;
     }
 
     void SetImageToZero()

@@ -13,6 +13,7 @@ public enum Impairment
     CATARACTS,
     PARKINSONS,
     NEUROPATHY,
+    HEARINGDAMAGE,
     NONE
 }
 
@@ -22,6 +23,7 @@ public class GrandController : MonoBehaviour
     [SerializeField] private static GrandController grandController;
     [SerializeField] public MuscleNeuropothy muscleNeuropathy;
     [SerializeField] public ChangeVision changeVision;
+    [SerializeField] public ChangeAudio changeAudio;
 
     void Start()
     {
@@ -43,6 +45,9 @@ public class GrandController : MonoBehaviour
                 break;
             case Impairment.NEUROPATHY:
                 grandController.muscleNeuropathy.MusclePeripheralNeuropathyOff();
+                break;
+            case Impairment.HEARINGDAMAGE:
+                grandController.changeAudio.StopAudioImpairment();
                 break;
             case Impairment.NONE:
                 Debug.LogError("There is no impairment to remove FFFFFUUUUUUUUUU........");
@@ -80,6 +85,9 @@ public class GrandController : MonoBehaviour
                 break;
             case Impairment.NEUROPATHY:
                 grandController.muscleNeuropathy.MusclePeripheralNeuropathy();
+                break;
+            case Impairment.HEARINGDAMAGE:
+                grandController.changeAudio.ChangeAudioClip(ChangeAudio.typeOfHearingImpairment.HEARINGDAMAGE);
                 break;
             case Impairment.NONE:
                 Debug.LogError("You are kinda stupid ngl if you are trying to set nothing");
