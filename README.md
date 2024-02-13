@@ -10,7 +10,8 @@ This Unity VR application simulates various visual impairments such as Diabetic 
 - **Simulation of Nervous System Impairments**: Understand the challenges faced by individuals with conditions like Peripheral Neuropathy and Parkinson's disease.
 - **Real-time Interaction**: Seamless interaction with the simulation through the Unity VR application and control via the Raspberry Pi web server.
 - **Customizable Settings**: Adjust simulation parameters to tailor the experience to specific impairment types and severity levels.
-
+- [**Demo**](https://www.youtube.com/watch?v=kBtGiG7xH3I)
+  
 ## Setup
 
 ### Hardware Requirements
