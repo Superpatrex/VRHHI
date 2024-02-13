@@ -52,7 +52,6 @@ This project is licensed under the [MIT License](LICENSE).
 - [Unity Technologies](https://unity.com/) for providing the Unity engine.
 - [Meta](https://www.meta.com/) for the Meta Quest 3 headset.
 - [Raspberry Pi Foundation](https://www.raspberrypi.org/) for the Raspberry Pi hardware.
-- [Flash](https://www.adobe.com/products/flashplayer/end-of-life.html) for the Flash web server.
 
 ## Contact
 
