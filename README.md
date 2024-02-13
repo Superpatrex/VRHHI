@@ -19,7 +19,7 @@ This Unity VR application simulates various visual impairments such as Diabetic 
 - Raspberry Pi
 
 ### Software Requirements
-- Unity (version X.X or later)
+- Unity (version 2022.3.17f1 or later)
 - Raspberry Pi OS
 - Flash web server (instructions provided in the setup guide)
 
